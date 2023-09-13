@@ -16,9 +16,6 @@
     "test": "jest",
     "start": "nodemon index.js"
   },
-  "jest": {
-    "testEnvironment": "node"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/WackyDawg/HNGX-Backend-Project-2.git"
