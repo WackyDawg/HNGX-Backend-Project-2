@@ -21,7 +21,7 @@ mongoose
     console.error(err); 
   });
 
-app.use(require('express-status-monitor')());
+//app.use(require('express-status-monitor')());
 app.use(cors());
 app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: false }));
