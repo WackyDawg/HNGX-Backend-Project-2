@@ -174,7 +174,7 @@ create a new PUT request to http://localhost:3000/api/64ff1ea91539022f0c4d1d98
 PUT /api/:user_id
 ```
 ![get user using GET](./images/updated.png)
-## ❯ GET Request Response
+## ❯ PUT Request Response
 ```bash
 {
     "message": "Successfully Updated",
