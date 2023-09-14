@@ -1,19 +1,23 @@
 const express = require('express');
 const router = express.Router(); 
-const {getUser, createUser, updateUser, deleteUser} = require('../controllers/userController');
+const {
+   validatePersonBody,
+   validatePersonUpdateBody,
+ } = require("../middleware/validation");
+const {getPerson, createPerson, updatePerson, deletePerson} = require('../controllers/personController');
 //const {createUser} = require('../controllers/userController');
 //const {updateUser} = require('../controllers/userController')
 
-router.get("/", (req, res) => {
-   res.send('Woo-Hoo Lets Build a User CRUD API!🙋')
+router.get("/api", (req, res) => {
+   res.send('Woo-Hoo ths is my User CRUD API!🙋')
 })
 
-router.get("/api/:userID", getUser);
+router.get("/api/:userID", getPerson);
 
-router.post("/api", createUser);
+router.post("/api", validatePersonBody, createPerson);
 
-router.put("/api/:userID", updateUser);
+router.put("/api/:userID", validatePersonBody, updatePerson);
 
-router.delete("/api/:userID", deleteUser);
+router.delete("/api/:userID", deletePerson);
 
 module.exports = router;
