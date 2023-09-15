@@ -20,9 +20,7 @@
 
 ## ❯ Why
 
-Our main goal with this project is a feature complete server application.
-We like you to be focused on your business and not spending hours in project configuration.
-
+Our main goal with this project is to create a users CRUD system for the HNGX Internship Backend Track Task.
 Try it!! We are happy to hear your feedback or any kind of new features.
 
 ### Features
