@@ -115,6 +115,8 @@ yarn start serve
 
 ![divider](./images/divider.png)
 
+## ❯ UML Diagram
+<img src="https://github.com/WackyDawg/HNGX-Backend-Project-2/blob/main/UML%20Diagram.png" alt="wackydawg" width="400" />
 ## ❯ API Routes
 
 The route prefix is `/api` by default, but you can change this in the .env file.
